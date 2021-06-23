@@ -3,6 +3,7 @@
 /**
  * _isalpha - Shows 1 if the input is c letter
  * another character shows 0
+ * @c: The character in ASCII code
  *
  * Return: 1 for letters. Returns 0 otherwise
  *
