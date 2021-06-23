@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - Ebnprint_alphabet - Prints the alphabet ascii in lowercase
+ * print_alphabet - Prints the alphabet ascii in lowercase
  *
  * Return: void
  *
