@@ -10,17 +10,13 @@
 
 int _isupper(int c)
 {
-	char d;
-
-	for (d = 'A'; d < 'Z'; d++)
+	if (c >= 'A' && c <= 'Z')
 	{
-		if (c == d)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
+		return (1);
 	}
+	else
+	{
+		return (0);
+	}
+
 }
