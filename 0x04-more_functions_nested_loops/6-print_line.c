@@ -5,7 +5,6 @@
  *
  * @n: Checks for how many lines
  *
- *
  */
 
 void print_line(int n)
