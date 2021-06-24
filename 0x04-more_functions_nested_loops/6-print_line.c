@@ -5,8 +5,6 @@
  *
  * @n: Checks for how many lines
  *
- * Return: /n if n is 0, n number of lines
- * if n is greater than 0
  *
  */
 
