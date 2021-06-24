@@ -12,7 +12,7 @@ void print_most_numbers(void)
 {
 	char n;
 
-	for (let n = '0'; n <= '9'; n++)
+	for (n = '0'; n <= '9'; n++)
 	{
 		if (n != '2' && n != '4')
 		{
