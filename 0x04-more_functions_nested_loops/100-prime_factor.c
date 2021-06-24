@@ -15,7 +15,7 @@ int main(void)
 {
 	long m, num = 612852475143;
 
-	for (m = 2; m <= num, m++)
+	for (m = 2; m <= num; m++)
 	{
 		if (num % m == 0)
 		{
