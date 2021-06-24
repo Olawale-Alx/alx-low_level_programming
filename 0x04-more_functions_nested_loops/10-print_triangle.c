@@ -20,12 +20,12 @@ void print_triangle(int size)
 
 	for (r = 0; r < size; r++)
 	{
-		for (c = size - r; c > 1; c++)
+		for (c = size - r; c > 1; c--)
 		{
 			_putchar(' ');
 		}
 
-		for (l = r + c; l >= 1; l++)
+		for (l = r + c; l >= 1; l--)
 		{
 			_putchar('#');
 		}
