@@ -4,6 +4,8 @@
 /**
  * swap_int - This function swaps the values of two integers
  *
+ * @a: First parameter
+ * @b: Second parameter
  * Return: No return
  *
  */

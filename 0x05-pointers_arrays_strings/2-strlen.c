@@ -3,6 +3,7 @@
 /**
  * _strlen - Returns the length of a string
  *
+ * @s: Parameter to be evaluated
  * Return: len
  *
  */
