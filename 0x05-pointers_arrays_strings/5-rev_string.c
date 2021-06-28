@@ -11,17 +11,26 @@
 void rev_string(char *s)
 {
 	int lang;
+	int g = 0;
+	char *w = s;
+	int q = 0;
+	int a;
+	char v;
 
-	for (lang = 0; s[lang] != '\0'; lang++)
+	while (*w != '\0')
 	{
+		w++;
+		leng++;
 	}
 
-	for (lang = lang - 1; lang >= 0; lang++)
+	g = leng - 1;
+
+	for (; q < ((g / 2) + 1); q++)
 	{
-		_putchar(s[lang]);
+		a = (g - q);
+		v = s[q];
+		s[q] = s[a];
+		s[a] = v;
 	}
 
-	_putchar('\n');
-
-	return (0);
 }
