@@ -11,7 +11,7 @@
 
 void _puts(char *str)
 {
-	int e;
+	int e = 0;
 
 	while (*(str + e) != '\0')
 	{
