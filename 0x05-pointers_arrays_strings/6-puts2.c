@@ -4,6 +4,8 @@
  * puts2 - This function prints every other
  * character of a string, starting with the first character
  *
+ * @str: Parameter to be evaluated
+ *
  * Return: 0
  */
 
