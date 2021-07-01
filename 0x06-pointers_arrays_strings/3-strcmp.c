@@ -5,7 +5,7 @@
  *
  * @s1: First string
  * @s2: Second string
- * Return: 0 (successful)
+ * Return: s1[v] - s2[v]
  *
  */
 
@@ -19,7 +19,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[v] != s2[v])
 		{
-			return (s1[v] = s2[v]);
+			return (s1[v] - s2[v]);
 		}
 
 		v++;
