@@ -6,10 +6,10 @@
  * @src: String to be added to dest
  * @n: Number of bytes
  *
- * Return: void
+ * Return: dest
  */
 
-char *_strncat(*char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int p;
 	int q;
