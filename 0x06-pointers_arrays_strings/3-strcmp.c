@@ -19,7 +19,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[v] != s2[v])
 		{
-			s1[v] = s2[v];
+			return s1[v] = s2[v];
 		}
 
 		v++;
