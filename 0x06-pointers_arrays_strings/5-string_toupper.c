@@ -26,5 +26,5 @@ char *string_toupper(char *n)
 		a++;
 	}
 
-	return (0);
+	return (n);
 }
