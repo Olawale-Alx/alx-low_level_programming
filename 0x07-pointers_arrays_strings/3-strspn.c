@@ -1,4 +1,4 @@
-#include "holberton.h"
+0;10;1c#include "holberton.h"
 
 /**
  * _strspn - Gets the length of a prefix substring
@@ -31,7 +31,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			return (len);
 		}
-		return (len);
+		
 	}
 
 	return (len);
