@@ -6,20 +6,21 @@
  *
  * @a: Array variable
  *
+ * Return: none
  */
 
-void print_chessboard(char (*a)[8])
+void chess_board(char (*a)[8])
 {
-	int i;
-	int j;
+	int v;
+	int w;
 
-	for (i = 0; i <= 8; i++)
+	for (v = 0; v < 8; v++)
 	{
-		for (j = 0; j <= 8; j++)
+		for (w = 0; w < 8; w++)
 		{
-			_putchar(a[i][j]);
+			_putchar(a[v][w]);
 		}
 
-	_putchar('\n');
+		_putchar('\n');
 	}
 }
