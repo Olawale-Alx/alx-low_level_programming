@@ -19,7 +19,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[w] == c)
 		{
-			return (&s[i]);
+			return (&s[w]);
 		}
 	}
 
