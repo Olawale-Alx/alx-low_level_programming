@@ -1,41 +1,43 @@
 #include "holberton.h"
 #include <stdlib.h>
-
 /**
- * create_array - This function creates an array of chars,
- * and initializes it with a specific char
- *
- * @size: Size of the array
- * @c: char to be initialized
- *
- * Return: pointer to array or null
- *
- */
-
-char *create_array(unsigned int size, char c)
+ * *argstostr - concatenates all arguements to the program
+ * @ac: arguement count
+ * @av: pointer to arguements
+ * Return: pointer to new space in memory or null
+ **/
+char *argstostr(int ac, char **av)
 {
-	char *str;
-	unsigned int i;
+	char *strDup;
+	int i, j, k, size;
 
-	if (size == 0)
-	{
+	if (ac == 0 || av == NULL)
 		return (NULL);
-	}
-
-	str = malloc(sizeof(char) * size);
-
-	if (str == NULL)
+	size = 0;
+/* count the number of chars in each string */
+	for (i = 0; i < ac; i++)
 	{
+		for (j = 0; av[i][j] != '\0'; j++)
+			size++;
+		size++;
+	}
+	size++;
+/*
+ * allocate memory for total number of chars and
+ * new line for each word
+ */
+	strDup = malloc(sizeof(char) * size);
+	if (strDup == NULL)
 		return (NULL);
-	}
-
-	i = 0;
-
-	while (i < size)
+	k = 0;
+	for (i = 0; i < ac; i++)
 	{
-		str[i] = c;
-		i++;
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			strDup[k++] = av[i][j];
+		}
+		strDup[k++] = '\n';
 	}
-
-	return (str);
+	strDup[k] = '\0';
+	return (strDup);
 }
