@@ -1,4 +1,4 @@
-0;10;1c#include "holberton.h"
+#include "holberton.h"
 
 /**
  * main - this program prints the number of arguements passed to it
