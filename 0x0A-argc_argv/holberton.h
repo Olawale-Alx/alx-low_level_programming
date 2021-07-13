@@ -2,5 +2,5 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, int *argv[]);
+int main(int argc, char *argv[]);
 int num_checker(char *a);
